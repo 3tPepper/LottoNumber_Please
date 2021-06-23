@@ -1,3 +1,11 @@
+// maker: shortcutsB
+// git: https://github.com/shortcutsB/LottoNumber_Please
+
+// 최근 30회 로또 번호 빈도수에 기반한 로또 번호 출력기
+// update date: 2021-06-23
+
+// 일확천금을 위해 아자아자!
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -44,6 +52,9 @@ int main(void) {
 		}
 		printf("\n\n");
 	}
+
+	getch();
+	return 0;
 }
 
 void lFrequency() {				// random[210]에 빈도수만큼 번호 채우는 함수
