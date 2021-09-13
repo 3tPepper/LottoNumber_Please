@@ -28,12 +28,12 @@ bool NotEqual(int i, int j, int r, int outNumber[][5]);
 int main(void) {
 	srand(time(NULL));
 	int i, j, k, r = 0;
-	int outNumber[6][5] = { 0, };
+	int outNumber[5][6] = { 0, };
 
 	lFrequency();
 
-	for (i = 0; i < 6;i++)		//0~209까지 난수를 생성하여 대입 후, 값 저장
-		for (j = 0;j < 5;j++) {
+	for (i = 0; i < 5;i++)		//0~209까지 난수를 생성하여 대입 후, 값 저장
+		for (j = 0;j < 6;j++) {
 			while (outNumber[i][j] == 0) {		//배열에 값이 들어올때까지 반복
 				r = rand() % 209;
 				if (NotEqual(i, j, r, outNumber)) {
@@ -46,8 +46,8 @@ int main(void) {
 	printf(" \n     금주의 로또 추천 번호는!\n");
 	printf("------------------------------------\n");
 
-	for (i = 0; i < 6;i++) {
-		for (j = 0;j < 5;j++) {
+	for (i = 0; i < 5;i++) {
+		for (j = 0;j < 6;j++) {
 			printf("%d\t", outNumber[i][j]);
 		}
 		printf("\n\n");
@@ -67,7 +67,7 @@ void lFrequency() {				// random[210]에 빈도수만큼 번호 채우는 함수
 		}
 }
 
-bool NotEqual(int i, int j, int r, int outNumber[][5]) {
+bool NotEqual(int i, int j, int r, int outNumber[][6]) {
 	bool button = true;
 
 	if (j!=0) {//맨 앞자리 번호가 아닌 경우
