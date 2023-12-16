@@ -5,8 +5,7 @@ D:\project\lottoPlease\lottoPlease\main.c(56,7): warning C4013: 'getch'이(가) 
 D:\project\lottoPlease\lottoPlease\main.c(30,12): warning C4101: 'k' :참조되지 않은 지역 변수입니다.
 D:\project\lottoPlease\lottoPlease\main.c(70,40): warning C4028: 정식 매개 변수 4이(가) 선언과 다릅니다.
   코드를 생성하고 있습니다.
-  2 of 7 functions (28.6%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    0 functions had inline decision re-evaluated but remain unchanged
+  Previous IPDB not found, fall back to full compilation.
+  All 7 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   코드를 생성했습니다.
   lottoPlease.vcxproj -> D:\project\lottoPlease\Release\lottoPlease.exe
